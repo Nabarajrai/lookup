@@ -21,7 +21,7 @@ function App() {
           value={value}
           type="text"
           onChange={(e) => setValue(e.target.value)}
-          placeholder="Please,enter your car number"
+          placeholder="Please,enter your car number!"
         />
 
         <button>Quick Lookup</button>
