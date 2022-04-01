@@ -1,7 +1,6 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
-import { Data } from "./tire.js";
 
 function App() {
   const [data, setData] = useState([]);
@@ -43,11 +42,9 @@ function App() {
           value={value}
           type="text"
           onChange={(e) => setValue(e.target.value)}
-          placeholder="Please,enter your car number!"
+          placeholder="Please,enter your car registration number!"
         />
-
         <button>Quick Lookup</button>
-
         <span onClick={handleClear}>Clear data</span>
       </form>
 
@@ -64,7 +61,7 @@ function App() {
                   <span>{item.Vehicle.ModelName}</span>
                 </div>
                 <li className="tire">
-                  <h1>Tire Details</h1>
+                  <h1>Tyre Details</h1>
                   <div>
                     <h2>Front</h2>
                     <ul>
